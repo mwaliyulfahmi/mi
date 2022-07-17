@@ -1,0 +1,791 @@
+/*
+body{
+    background-image: url("owl2.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment:scroll;
+    background-size:auto;
+}
+p{
+    margin-right: 50%;
+}
+
+*/
+#dotted{
+    border-style: dotted;
+}
+#dashed{
+    border-style: dashed;
+}
+#solid{
+    border-style:solid;
+}
+#double{
+    border-style: double;
+}
+#groove{
+    border-style:groove ;
+}
+#ridge{
+    border-style: ridge;
+}
+#inset{
+    border-style: inset;
+}
+#outset{
+    border-style: outset;
+}
+#none{
+    border-style: none;
+}
+#hidden{
+    border-style: hidden;
+}
+#mix{
+    border-style: dotted dashed solid double;
+}
+
+.one{
+    border:  solid 5px;
+}
+.two{
+    border: solid medium;
+}
+.three{
+    border: dotted 2px;
+}
+.four{
+    border: dotted thick;
+}
+.five{
+    border: double 15px;
+}
+.six{
+    border:double thick;
+}
+.seven{
+    border: solid ;
+    border-width: 5px 20px;
+}
+.eight{
+    border: solid;
+    border-width: 20px 5px;
+}
+.nine{
+    border:solid;
+    border-width: 25px 10px 4px 35px;
+}
+#q1{
+    border:solid red;
+}
+#q2{
+    border:solid green;
+}
+#q3{
+    border: dotted blue;
+}
+#q4{
+    border: solid;
+    border-color:  red green blue yellow;
+}
+#q5{
+    border-style:dotted solid double dashed ;
+    border-color: chartreuse;
+    border-width: 5px;
+}
+#q51{
+    border-style:double ;
+    border-top-style: dashed;
+    border-color: darkgoldenrod;
+    border-width: 6px;
+    border-bottom-color: #9c0a53;
+}
+#q6{
+    border-bottom-style: solid;
+    border-color: cornflowerblue;
+}
+#q7{
+    border: 5px solid aqua;
+}
+#q8{
+    border:5px dotted chartreuse;;
+}
+#q9{
+    border-left: 6px solid saddlebrown;
+    background-color: royalblue;
+}
+#q10{
+    border-width: 5px;
+    border-style: solid;
+    border-color: chartreuse;
+    border-bottom-color: crimson;
+}
+#q11{
+    border-color: blueviolet;
+    border: double;
+    border-width: 5px;
+    border-bottom-color: chartreuse;
+    border-top-color: blueviolet;
+    border-left-color: transparent;
+}
+#q12{
+    margin: 70px;
+    border: 3px solid blueviolet;
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    color: coral;
+    text-align: center;
+}
+h3{
+    color: coral;
+    text-align: center;
+}
+#q13{
+    border: 4px solid crimson;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: #aff328;
+}
+#q14{
+border: 4px solid greenyellow;
+margin: 20px 5px 75px 100px;
+background-color: lightblue;
+}
+#q15{
+    border: 4px solid greenyellow;
+    margin: 25px 50px 75px;
+    background-color: lightblue;
+}
+#q16{
+    border: 4px solid greenyellow;
+    margin: 45px 80px;
+    background-color: lightblue;
+}
+#q17{
+    width: 300px;
+    margin:auto;
+    border:2px solid blue;
+}
+#q18{
+    margin-left: 90px;
+    margin-right: 10px;
+}
+div{
+    border: 3px solid yellowgreen;    
+}
+#q19{
+    margin-left: inherit;
+}
+h4{
+    margin:0 0 50px 0;
+}
+h2.text{
+    color: coral;
+    text-align: center;
+}
+h2{
+    margin:20px 80px 10px 60px;
+}
+#q20{
+    margin:30px 50px 70px 60px;
+    color: #9c0a53;
+}
+div.one{
+    padding: 70px;
+    border: 2px solid seagreen;
+}
+#q21{
+    border:1px solid blueviolet;
+    background-color: darkgrey;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+}
+#q22{
+    border: 1px solid black;
+    padding: 15px 20px 75px;
+    background-color: lightblue;
+}
+#q23{
+    border: 1px solid black;
+    padding: 10px 75px;
+    background-color: lightblue;
+}
+#q24{
+    width: 300px;
+    background-color: yellowgreen;
+}
+#q24_1{
+    width: 300px;
+    box-sizing: border-box;
+    background-color: yellowgreen;
+}
+#q25{
+    width: 300px;
+    padding: 25px;
+    background-color: yellowgreen;
+}
+#q26{
+    width: inherit;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: yellowgreen;
+    margin: 50px;
+}
+div.border{
+    width: 500px;
+    padding: 25px;
+    background-color: rgb(141, 8, 250);
+    border-color: black;
+    margin: 100px;
+}
+div.border2{
+    width : 1000px;
+    padding: 25px;
+    background-color: rgb(141, 8, 250);
+    border-color: black;
+    margin: 5px 80px;
+}
+div.border3{
+    width : inherit;
+    height: inherit;
+    padding: 25px;
+    background-color: rgb(141, 8, 250);
+    border-color: black;
+    margin: 5px 80px;
+}
+div.border4{
+    width : inherit;
+    height: inherit;
+    padding: 25px;
+    background-color: rgb(141, 8, 250);
+    border-color: black;
+    margin: 20px;
+}
+div.border5{
+    height: 100px;
+    width: 500px;
+    padding: 25px;
+    background-color: rgb(141, 8, 250);
+    border-color: black;
+    margin: 20px;
+}
+div.border6{
+   
+    width: auto;
+    padding: 25px;
+    background-color: rgb(141, 8, 250);
+    border-color: black;
+    margin: 20px;
+}
+div.border7{
+    height: 100px;
+    max-width: 500px;
+    padding: 25px;
+    background-color: rgb(141, 8, 250);
+    border-color: black;
+    margin: 20px;
+}
+h4.crot{
+    height: 50px;
+    
+}
+#b1{
+    background-color: darkgray;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: auto;
+}
+#b2{
+    background-color: darkgray;
+    width: 320px;
+    border: 15px solid green;
+    padding: 10px;
+    margin: 0;
+}
+#o1,#o2,#o3,#o4,#o5,#o6,#o7,#o8{
+    outline-color: red;
+}
+#o1{
+    outline-style: dotted;
+}
+#o2{
+    outline-style: dashed;
+}
+#o3{
+    outline-style: solid;
+}
+#o4{
+    outline-style: double;
+}
+#o5{
+    outline-style: groove;
+}
+#o6{
+    outline-style: ridge;
+}
+#o7{
+    outline-style: inset;
+}
+#o8{
+    outline-style: outset;
+}
+
+
+#o9,#o10,#o11,#o12{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+}
+#o9{
+    outline-width: thin;
+}
+#o10{
+    outline-width: medium;
+}
+#o11{
+    outline-width: thick;
+}
+#o12{
+    outline-width: 4px;
+}
+#o13{
+    outline: dashed;
+}
+#o14{
+    outline: dotted red;
+}
+#o15{
+    outline: 5px solid yellow;
+}
+#o16{
+    outline: thick dashed green;
+}
+#o17{
+    margin: 30px;
+    border: 1px solid black;
+    outline: 2px solid red;
+    outline-offset: 15px;
+}
+#o18{
+    margin: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    outline:2px solid red ;
+    outline-offset: 30px;
+}
+#o19{
+    border: 1px solid red;
+    padding:  10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
+#o20{
+    text-align: justify;
+}
+#o21{
+    text-align: right;
+}
+#o22{
+    text-align: left;
+}
+#o23{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+#o24{
+    vertical-align: baseline;
+}
+#o25{
+    vertical-align: text-top;
+}
+#o26{
+    vertical-align: text-bottom;
+}
+#o27{
+    vertical-align: sub;
+}
+#o28{
+    vertical-align: super;
+}
+
+#t1{
+    text-decoration: overline;
+}
+#t2{
+    text-decoration: line-through;
+}
+#t3{
+    text-decoration: underline;
+    text-decoration-color: red;
+    
+}
+#t4{
+    text-decoration: overline underline;
+    text-decoration-color: #9c0a53;
+}
+#t5,#t6,#t7,#t8,#t9,#t10,#t11,#t12,#t13,#t14{
+    text-decoration-line:underline ;
+}
+
+#t5{
+    text-decoration-style:solid ;
+}
+#t6{
+    text-decoration-style:double ;
+}
+#t7{
+    text-decoration-style:dotted ;
+}
+#t8{
+    text-decoration-style: dashed;
+}
+#t9{
+    text-decoration-line: wavy;
+}
+#t10{
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+#t11{
+    text-decoration-thickness:auto ;
+}
+#t13{
+    text-decoration-thickness:5px ;
+}
+#t13{
+    text-decoration-thickness:25% ;
+}
+#t14{
+    text-decoration-thickness:5px ;
+    text-decoration-color: red;
+    text-decoration-style:double ;
+}
+#t15{
+    text-decoration: overline;
+    text-decoration-color:blue ;
+    text-decoration-thickness:20px ;
+    text-decoration-style: dashed;
+}
+#t16{
+    text-decoration: overline underline purple double 7px;
+}
+#t17{
+    text-transform: uppercase;
+}
+#t18{
+    text-transform: lowercase;
+}
+#t19{
+    text-transform: capitalize;
+}
+#t20{
+    text-indent: 50px;
+}
+#t21{
+    text-indent: 80px;
+}
+#t22{
+    text-indent: 20px;
+}
+#t23{
+    letter-spacing: 5px;
+}
+#t24{
+    letter-spacing: -2px;
+}
+#t25{
+    letter-spacing: 3px;
+}
+#t26{
+    line-height: 0.7;
+}
+#t27{
+    line-height: 1.9;
+}
+#t28{
+    word-spacing: 10px;
+}
+#t29{
+    word-spacing: -2px;
+}
+#t30{
+    word-spacing: 5px;
+}
+#t31{
+    white-space: nowrap;
+}
+#t32{
+    text-shadow: 2px 2px;
+}
+
+#t33{
+    text-shadow: 2px 2px red;
+}
+#t34{
+    text-shadow: 2px 2px 5px red;
+}
+#t35{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+}
+#t36{
+    text-shadow: 0 0 3px #FF0000;
+    font-size: 30px;
+}
+#t37{
+    text-shadow: 0 0 5px blueviolet;
+    font-size: 30px;
+}
+#t38{
+    color:yellowgreen;
+    text-shadow: 1px 1px 2px , 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 30px;
+}
+#f1{
+    font-size: "Times New Roman", Times, serif;
+}
+#f2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#f3{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#f4{
+    font-family: Helvetica, sans-serif;
+}
+#f5{
+    font-family: Tahoma, Verdana, sans-serif;
+}
+#f6{
+    font-family: Arial, sans-serif;
+}
+#f7{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+#f71{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 20px;
+}
+#f8{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+#f9{
+    font-family: 'Whisper', cursive;
+    font-size: 20px;
+}
+#f10{
+    font-family: 'Whisper', cursive;
+    font-size: 50px;
+}
+#f11{
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+#f12{
+    font-family: Whisper, cursive;
+    font-size: 50px;
+}
+#f13{
+    font-family: Square Peg, cursive;
+    font-size: 50px;
+}
+#f14{
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+}
+#f15{
+    font-family: 'Updock','Beau Rivage', cursive;
+    font-size: 50px;
+}
+#f16{
+    font-family:'Beau Rivage','Updock', cursive;
+    font-size: 50px;
+}
+#f17{
+    font-family: 'My Soul','Beau Rivage', cursive;
+    font-size: 50px;
+}
+#f18{
+    font-family: Garamond,serif;
+    font-size: 50px;
+}
+#f19{
+    font-style: normal;
+    font-size: 20px;
+}
+#f20{
+    font-style: italic;
+    font-size: 20px;
+}
+#f21{
+    font-style: oblique;
+    font-size: 20px;
+}
+#f22{
+    font-weight: normal;
+    font-size: 20px;
+}
+#f23{
+    font-weight: lighter;
+    font-size: 20px;
+}
+#f24{
+    font-weight: bold;
+    font-size: 20px;
+}
+#f25{
+    font-weight: 2000;
+    font-size: 20px;
+}
+#f26{
+    font-variant: normal;
+    font-size: 20px;
+}
+#f27{
+    font-variant: small-caps;
+    font-size: 20px;
+}
+#f28{
+    font-size: 16px;
+}
+#f29{
+    font-size: 24px;
+}
+#f30{
+    font-size: 1.5em;
+}
+#f31{
+    font-size: 29px;
+}
+#f32{
+    font-size: 2.0em;
+}
+#f33{
+    font-size: 32px;
+}
+#f34{
+    font-size: 10vw;
+}
+#f35{
+    font-size: 15vw;
+}
+#f36{
+    font-family: 'Pacifico',cursive;
+    font-size: 30px;
+}
+#f37{
+    font-family: 'Pacifico',cursive;
+    font-size: 50px;
+}
+#f38{
+    font-family: 'Grape Nuts',cursive;
+    font-size: 30px;
+}
+#f39{
+    font-family: 'Grape Nuts',cursive;
+    font-size: 50px;
+}
+#f40{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+#f41{
+    font-family: 'Lobster',cursive;
+    font-size: 50px;
+}
+#f42{
+    font-family: Shadows Into Light,cursive;
+    font-size: 50px;
+}
+#f43{
+    font-family: Babylonica,cursive;
+    font-size: 50px;
+}
+#f44{
+    font-family: Tapestry,cursive;
+    font-size: 50px;
+}
+#f45{
+    font-family: "Audiowide", sans-serif;
+    font-size: 50px;
+}
+#f46{
+    font-family: "Sovia",sans-serif;
+    font-size: 50px;
+}
+#f47{
+    font-family: "Trirong",serif;
+    font-size: 50px;
+}
+#f48{
+    font-family: "Oleo Script Swash Caps",cursive;
+    font-size: 50px;
+}
+#f49{
+    font-family: "Georgia",serif;
+    font-size: 46px;
+}
+#f50{
+    font-family: "Verdana",sans-serif;
+    font-size: 16px;
+}
+
+#f51{
+    font-family: "Helvatica",sans-serif;
+    font-size: 46px;
+}
+#f52{
+    font-family: "Garamond",serif;
+    font-size: 16px;
+}
+#f53{
+    font: italic bold 15px/30px "Georgia",serif;
+}       
+#t1{
+    color: blue;
+}
+
+#custumers{
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    
+}
+#custumers td, #custumers th{
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid #ddd;
+    padding: 15px;
+}
+#custumers tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#custumers tr:hover{
+    background-color: #ddd;
+}
+#custumers th:hover{
+    background-color: yellow;
+}
+#custumers th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(73, 230, 73);
+    color: white;
+}
+
+#table, th, td{
+    border: 1px solid;
+}
